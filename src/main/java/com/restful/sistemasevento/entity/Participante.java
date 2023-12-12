@@ -12,15 +12,11 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "Participante")
-@Table(
-        name = "tb_participante",
-        schema = "db_sistema_evento"
-)
+@Table(name = "tb_participante")
 public class Participante {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(columnDefinition = "BIGINT UNSIGNED")
     private Long id;
 
     @Column(name = "nome_participante",

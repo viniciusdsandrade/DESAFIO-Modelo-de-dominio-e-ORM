@@ -13,15 +13,11 @@ import java.time.Instant;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "Bloco")
-@Table(
-        name = "tb_bloco",
-        schema = "db_sistema_evento"
-)
+@Table(name = "tb_bloco")
 public class Bloco {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(columnDefinition = "BIGINT UNSIGNED")
     private Long id;
 
     @Column(name = "descricao_bloco",

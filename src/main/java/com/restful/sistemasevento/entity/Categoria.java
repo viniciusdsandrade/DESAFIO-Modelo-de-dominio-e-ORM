@@ -16,15 +16,11 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "Categoria")
-@Table(
-        name = "tb_categoria",
-        schema = "db_sistema_evento"
-)
+@Table(name = "tb_categoria")
 public class Categoria {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(columnDefinition = "BIGINT UNSIGNED")
     private Long id;
 
     @Column(name = "descricao_categoria",
